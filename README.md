@@ -60,7 +60,7 @@ cd hyperspectralcode
 
 ### 2. Install Dependencies
 ```bash
-pip install numpy scipy matplotlib scikit-learn reportlab
+pip install numpy scipy matplotlib scikit-learn
 # Install PyTorch to enable the deep learning autoencoder (recommended)
 pip install torch
 ```
@@ -76,20 +76,11 @@ This will:
 3. Print statistical metrics (ROC-AUC, PR-AUC, optimal threshold, FAR, Sensitivity).
 4. Save the multi-panel comparison dashboard to `hyperspectral_anomaly_dashboard.png`.
 
-### 4. Generate the PDF Report
-To compile the highly detailed, publication-quality technical report PDF:
-```bash
-python3 generate_report_pdf.py
-```
-This generates `Hyperspectral_Pipeline_Report.pdf`.
-
 ---
 
 ## 📁 Repository Structure
 ```align
 ├── anomaly_detection_pipeline.py  # Core end-to-end pipeline execution script
-├── generate_report_pdf.py          # PDF report compiler using ReportLab
-├── Hyperspectral_Pipeline_Report.pdf # Publication-quality technical report PDF
 ├── hyperspectral_anomaly_dashboard.png # Generated comparison visualization dashboard
 ├── .gitignore                     # standard Python / OS git ignore configurations
 └── README.md                      # Detailed project documentation and architecture guide
