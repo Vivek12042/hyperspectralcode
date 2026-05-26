@@ -21,3 +21,7 @@ ENV/
 build/
 dist/
 *.egg-info/
+
+# PDF Report generation files (Local only, ignored on GitHub)
+generate_report_pdf.py
+Hyperspectral_Pipeline_Report.pdf
